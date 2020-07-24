@@ -3,8 +3,8 @@ pipeline{
   stages{
     stage('Install Dependencies'){
       steps{
-          //nodejs('nodejs'){
-          //sh 'npm install'
+          nodejs('nodejs'){
+          sh 'npm install'
           echo "Modules Installed"
         }
       }
