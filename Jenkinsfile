@@ -9,5 +9,15 @@ pipeline{
         }
       }
     }
+    
+    stage('Build'){
+      steps{
+        nodejs('nodejs'){
+          sh 'npm run build'
+          echo "Build Completed"
+        }
+      }
+    }
+    
   }
 }
