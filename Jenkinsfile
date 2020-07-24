@@ -10,6 +10,13 @@ node(){
     }
   }
   
+   stage('update'){
+    nodejs('nodejs'){
+      sh 'npm update'
+      echo "Build Completed"
+    }
+  }
+  
   stage('Build'){
     nodejs('nodejs'){
       sh 'npm run build'
