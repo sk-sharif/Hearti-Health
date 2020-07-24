@@ -5,8 +5,8 @@ node(){
   
   stage('Install Dependencies'){
     nodejs('nodejs'){
-      sh 'npm install'
-      echo "Modules Installed"
+      sh '''npm install'''
+      //echo "Modules Installed"
     }
   }
   
